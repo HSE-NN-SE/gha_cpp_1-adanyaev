@@ -28,7 +28,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: build
-        run: cl main.cpp
+        run: cl /EHsc main.cpp postfix.cpp
       - name: ls
         run: ls
       - name: "Upload Artifact"
